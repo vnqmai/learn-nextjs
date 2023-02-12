@@ -18,7 +18,8 @@
     "paths": {
       "@/interface/*": ["./interface/models/*"],
       "@/components/*": ["./components/*"],
-      "@/styles/*": ["./styles/*"]
+      "@/styles/*": ["./styles/*"],
+      "@/api/*": ["./api-client/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
