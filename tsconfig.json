@@ -19,7 +19,8 @@
       "@/interface/*": ["./interface/models/*"],
       "@/components/*": ["./components/*"],
       "@/styles/*": ["./styles/*"],
-      "@/api/*": ["./api-client/*"]
+      "@/api/*": ["./api-client/*"],
+      "@/hooks/*": ["./hooks/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
