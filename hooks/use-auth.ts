@@ -3,11 +3,17 @@ import useSWR from 'swr'
 import { PublicConfiguration } from 'swr/_internal'
 // save profile
 export const useAuth = (options: Partial<PublicConfiguration>) => {
-  const { data: profile, mutate } = useSWR('/profile', {
+  const {
+    data: profile,
+    error,
+    mutate,
+  } = useSWR('/profile', {
     revalidateOnFocus: false,
     dedupingInterval: 60000, // 1hr
     ...options,
   })
+
+  const firstLoading = profile === undefined && error === undefined
 
   const login = async () => {
     await authApi.login({ username: 'test', password: '123456' })
@@ -20,7 +26,8 @@ export const useAuth = (options: Partial<PublicConfiguration>) => {
 
   return {
     profile,
-    mutate,
+    firstLoading,
+    error,
     login,
     logout,
   }

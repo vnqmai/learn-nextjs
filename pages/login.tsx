@@ -1,13 +1,16 @@
 // import { authApi } from '@/api/index'
 import { useAuth } from '@/hooks/index'
+import { useRouter } from 'next/router'
 
 export default function LoginPage() {
+  const router = useRouter()
   const { profile, login, logout } = useAuth({ revalidateOnMount: false })
   const handleLogin = async () => {
     try {
       // authApi.login({ username: 'test', password: '123456' })
       await login()
-      console.log('redirect to dashboard')
+      console.log('redirect to admin')
+      router.push('/admin')
     } catch (error) {
       console.log('failed to login', error)
     }

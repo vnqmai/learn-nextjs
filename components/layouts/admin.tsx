@@ -1,10 +1,11 @@
+import Auth from '@/components/common/auth'
 import { ILayoutProps } from '@/interface/common'
 import Link from 'next/link'
 
 function AdminLayout(props: ILayoutProps) {
   const { children } = props
   return (
-    <div>
+    <Auth>
       <div>Admin layout</div>
       <div>
         <Link href={'/about'}>
@@ -15,7 +16,7 @@ function AdminLayout(props: ILayoutProps) {
         </Link>
       </div>
       <div>{children}</div>
-    </div>
+    </Auth>
   )
 }
 
