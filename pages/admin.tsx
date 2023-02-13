@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material'
 import { useRouter } from 'next/router'
 import AdminLayout from '../components/layouts/admin'
 import { useAuth } from '../hooks'
@@ -21,7 +22,9 @@ function Admin(props: IAdminPageProps) {
 
   return (
     <div>
-      <div>Admin page - no unmount/mount effect</div>
+      <Typography component="h1" variant="h2" color="primary.main">
+        Admin page - no unmount/mount effect
+      </Typography>
       <div>Profile: {JSON.stringify(profile)}</div>
       <div>
         <button onClick={handleLogout}>Logout</button>
