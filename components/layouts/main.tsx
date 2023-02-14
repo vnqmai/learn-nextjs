@@ -1,21 +1,29 @@
 import { ILayoutProps } from '@/interface/common'
+import { Box } from '@mui/material'
+import { Stack } from '@mui/system'
 import Link from 'next/link'
+import { Footer, Header } from '../common'
 
 function MainLayout(props: ILayoutProps) {
   const { children } = props
   return (
-    <div>
-      <div>Main layout</div>
-      <div>
-        <Link href={'/about'}>
-          <a>About</a>
-        </Link>
-        <Link href={'/admin'}>
-          <a>Admin</a>
-        </Link>
-      </div>
-      <div>{children}</div>
-    </div>
+    <Stack minHeight="100vh">
+      <Header />
+      <Box flexGrow={1}>
+        <Box>
+          <Link href={'/blog'}>
+            <a>Blog</a>
+          </Link>
+        </Box>
+        <Box>
+          <Link href={'/works'}>
+            <a>Works</a>
+          </Link>
+        </Box>
+        {children}
+      </Box>
+      <Footer />
+    </Stack>
   )
 }
 
