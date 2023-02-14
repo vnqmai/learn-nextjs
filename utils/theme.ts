@@ -14,4 +14,19 @@ export const theme = createTheme({
       main: red.A400,
     },
   },
+  components: {
+    MuiContainer: {
+      defaultProps: {
+        maxWidth: 'md',
+      },
+      styleOverrides: {
+        maxWidthMd: {
+          '@media (min-width: 600px)': { maxWidth: '860px' },
+        },
+        maxWidthSm: {
+          '@media (min-width: 600px)': { maxWidth: '680px' },
+        },
+      },
+    },
+  },
 })
