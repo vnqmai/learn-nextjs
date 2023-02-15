@@ -5,10 +5,10 @@ import { createTheme } from '@mui/material/styles'
 export const theme = createTheme({
   palette: {
     primary: {
-      main: '#556cd6',
+      main: '#FF6464',
     },
     secondary: {
-      main: '#19857b',
+      main: '#21243D',
     },
     error: {
       main: red.A400,
@@ -25,6 +25,19 @@ export const theme = createTheme({
         },
         maxWidthSm: {
           '@media (min-width: 600px)': { maxWidth: '680px' },
+        },
+      },
+    },
+    MuiLink: {
+      defaultProps: {
+        underline: 'none',
+      },
+      styleOverrides: {
+        root: {
+          color: 'black',
+          '&:hover': {
+            color: '#FF6464',
+          },
         },
       },
     },
