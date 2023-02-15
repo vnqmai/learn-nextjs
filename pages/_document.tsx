@@ -13,7 +13,11 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="emotion-insertion-point" content="" />
-          {(this.props as any).emotionStyleTags}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+          />
+          {/* {(this.props as any).emotionStyleTags} */}
         </Head>
         <body>
           <Main />

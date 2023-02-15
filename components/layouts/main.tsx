@@ -1,7 +1,7 @@
 import { ILayoutProps } from '@/interface/common'
-import { Box, Container } from '@mui/material'
+import { Box } from '@mui/material'
 import { Stack } from '@mui/system'
-import Link from 'next/link'
+// import Link from 'next/link'
 import { Footer, Header } from '../common'
 
 function MainLayout(props: ILayoutProps) {
@@ -10,7 +10,7 @@ function MainLayout(props: ILayoutProps) {
     <Stack minHeight="100vh">
       <Header />
       <Box flexGrow={1}>
-        <Container
+        {/* <Container
           maxWidth="sm"
           sx={{
             bgcolor: 'red',
@@ -31,7 +31,7 @@ function MainLayout(props: ILayoutProps) {
           <Link href={'/works'}>
             <a>Works</a>
           </Link>
-        </Box>
+        </Box> */}
 
         {children}
       </Box>
