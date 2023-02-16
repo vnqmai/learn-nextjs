@@ -1,4 +1,4 @@
-import { createEmotionCache, theme } from '@/utils/index'
+import { createEmotionCache, theme } from '@/utils'
 import createEmotionServer from '@emotion/server/create-instance'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 // import theme, { roboto } from '../src/theme';

@@ -16,13 +16,9 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/interface/*": ["./interface/models/*"],
-      "@/components/*": ["./components/*"],
-      "@/styles/*": ["./styles/*"],
-      "@/api/*": ["./api-client/*"],
-      "@/hooks/*": ["./hooks/*"],
-      "@/utils/*": ["./utils/*"],
-      "@/images/*": ["./images/*"]
+      "@/*": ["./*"],
+      "@/api": ["./api-client/index.ts"],
+      "@/api/*": ["./api-client/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

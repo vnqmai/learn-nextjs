@@ -1,4 +1,4 @@
-import { LoginPayload } from '@/interface/index'
+import { LoginPayload } from '@/interface'
 import axiosClient from './axios-client'
 
 export const authApi = {

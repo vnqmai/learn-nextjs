@@ -1,5 +1,6 @@
 import { Post } from '@/interface/post'
 import { Card, CardContent, Divider, Typography } from '@mui/material'
+import { Box } from '@mui/system'
 import moment from 'moment'
 
 export interface IPostCardProps {
@@ -15,11 +16,13 @@ export function PostCard({ post }: IPostCardProps) {
         <Typography variant="h5" fontWeight={'bold'} pb={2}>
           {post.title}
         </Typography>
-        <Typography variant="body1" pb={2} sx={{ display: 'flex' }}>
-          {moment(post.publishedDate).format('DD MMM YYYY')}
+        <Box sx={{ display: 'flex' }} pb={2}>
+          <Typography variant="body1">
+            {moment(post.publishedDate).format('DD MMM YYYY')}
+          </Typography>
           <Divider orientation="vertical" sx={{ mx: 2 }} flexItem />
-          {post.tagsList.join(', ')}
-        </Typography>
+          <Typography variant="body1">{post.tagsList.join(', ')}</Typography>
+        </Box>
         <Typography variant="body2">{post.description}</Typography>
       </CardContent>
     </Card>
