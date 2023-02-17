@@ -1,4 +1,4 @@
-import { ILayoutProps } from '@/interface/common'
+import { ILayoutProps } from '@/interface/models/common'
 
 function EmptyLayout(props: ILayoutProps) {
   const { children } = props

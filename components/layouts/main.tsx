@@ -1,4 +1,4 @@
-import { ILayoutProps } from '@/interface/common'
+import { ILayoutProps } from '@/interface/models'
 import { Box } from '@mui/material'
 import { Stack } from '@mui/system'
 // import Link from 'next/link'

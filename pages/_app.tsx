@@ -1,6 +1,6 @@
 import axiosClient from '@/api/axios-client'
 import EmptyLayout from '@/components/layouts/empty'
-import { AppPropsWithLayout } from '@/interface/common'
+import { AppPropsWithLayout } from '@/interface/models'
 import '@/styles/globals.css'
 import { createEmotionCache, theme } from '@/utils'
 import { CacheProvider } from '@emotion/react'

@@ -1,5 +1,5 @@
 import Auth from '@/components/common/auth'
-import { ILayoutProps } from '@/interface/common'
+import { ILayoutProps } from '@/interface/models'
 import Link from 'next/link'
 
 function AdminLayout(props: ILayoutProps) {
