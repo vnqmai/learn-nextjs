@@ -1,6 +1,6 @@
 export const ROUTES_HEADER = [
   {
-    path: '/home',
+    path: '/',
     label: 'Home',
   },
   {
