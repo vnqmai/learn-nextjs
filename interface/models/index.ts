@@ -1,3 +1,4 @@
-export * from '@/interface/auth'
-export * from '@/interface/common'
-export * from '@/interface/post'
+export * from '@/interface/models/auth'
+export * from '@/interface/models/common'
+export * from '@/interface/models/post'
+export * from '@/interface/models/work'
