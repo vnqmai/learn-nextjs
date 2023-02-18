@@ -4,7 +4,7 @@ export const ROUTES_HEADER = [
     label: 'Home',
   },
   {
-    path: '/blog',
+    path: '/blogs',
     label: 'Blog',
   },
   {
