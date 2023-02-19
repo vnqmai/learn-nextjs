@@ -13,4 +13,5 @@ export interface Post {
   slug: string
   author?: Author
   mdContent: string
+  htmlContent?: string
 }
